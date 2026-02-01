@@ -38,16 +38,16 @@ public class New2 {
         //     System.out.println();
             
         // }
-        int a=scan.nextInt();
-        int b=scan.nextInt();
-     multiply(a,b);
-    }
-    static void multiply(int x,int y){
-        int result=1;
-        for(int i=1;i<=y;i++){
-            result*=x;
-        }
-        System.out.println(result);
+    //     int a=scan.nextInt();
+    //     int b=scan.nextInt();
+    //  multiply(a,b);
+    // }
+    // static void multiply(int x,int y){
+    //     int result=1;
+    //     for(int i=1;i<=y;i++){
+    //         result*=x;
+    //     }
+    //     System.out.println(result);
 
     }
 }
