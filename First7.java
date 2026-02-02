@@ -9,14 +9,14 @@ public class First7 {
             a[i]=scan.nextInt();
         }
         int l=0;
-        int sl=Integer.MIN_VALUE;
+        int sl=Integer.MAX_VALUE;
         for (int i = 1; i < a.length; i++) {
-            if(a[i]>l){
+            if(a[i]<l){
                 sl=l;
                 l=a[i];
                 
             }
-             else if(a[i]>sl && a[i]!=l){
+             else if(a[i]<sl && a[i]!=l){
                 sl=a[i];
                 
             }
