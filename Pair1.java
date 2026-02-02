@@ -7,10 +7,10 @@ public class Pair1 {
         for (int i = 0; i < a.length; i++) {
             a[i]=scan.nextInt();
         }
-        int maxpair=Integer.MAX_VALUE;
+        int maxpair=Integer.MIN_VALUE;
         for (int i = 0; i < a.length; i++) {
             for (int j = i+1; j < a.length; j++) {
-                if(a[i]*a[j]<maxpair){
+                if(a[i]*a[j]>maxpair){
                     maxpair=a[i]*a[j];
                 }
                 
