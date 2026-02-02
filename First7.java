@@ -8,9 +8,9 @@ public class First7 {
         for (int i = 0; i < a.length; i++) {
             a[i]=scan.nextInt();
         }
-        int l=0;
+        int l=Integer.MAX_VALUE;
         int sl=Integer.MAX_VALUE;
-        for (int i = 1; i < a.length; i++) {
+        for (int i = 0; i < a.length; i++) {
             if(a[i]<l){
                 sl=l;
                 l=a[i];
