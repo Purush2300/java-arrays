@@ -11,12 +11,18 @@ public class Pair6 {
         for (int i = 0; i < a.length-1; i++) {
             if(a[i+1]-a[i]!=1){
                 res=a[i]+1;
+                System.out.println(res);
+                return;
+
                 
             }
             
         }
-        System.out.println(res);
+        
+        
 
+        
+        
     }
 
     
