@@ -1,19 +1,23 @@
 import java.util.Scanner;
-public class Pair2 {
+public class Pair6 {
     public static void main(String[] args) {
         Scanner scan =new Scanner(System.in);
         int n=scan.nextInt();
-        int [] a=new int [n];
+        int []a=new int [n];
         for (int i = 0; i < a.length; i++) {
             a[i]=scan.nextInt();
         }
+        int res=0;
         for (int i = 0; i < a.length-1; i++) {
-            for (int j = i+1; j < a.length; j++) {
-                System.out.print("["+a[i]+","+a[j]+"]");
+            if(a[i+1]-a[i]!=1){
+                res=a[i]+1;
                 
             }
-            System.out.println();
+            
         }
+        System.out.println(res);
+
     }
+
     
 }
