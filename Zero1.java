@@ -7,7 +7,7 @@ public class Zero1 {
         for (int i = 0; i < a.length; i++) {
             a[i]=scan.nextInt();
         }
-        int sum=1 ,max=0;
+        int sum=1 ,max=0 ,s=0,e=0;
         for (int i = 0; i < a.length-1; i++) {
             if(a[i+1]-a[i]==1){
                 sum++;
@@ -18,6 +18,7 @@ public class Zero1 {
             else{
                 if(sum>max){
                     max=sum;
+                    e=i;
                 }
                 
                 sum=1;
@@ -27,9 +28,14 @@ public class Zero1 {
         }
         if(sum>max){
                     max=sum;
+                    e=a.length-1;
                 }
                 
-    System.out.println(max);
+    s=e-max+1;
+    for (int i = s; i <=e; i++) {
+        System.out.println(a[i]+" ");
+        
+    }
        
     }
     
