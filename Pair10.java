@@ -11,12 +11,15 @@ public class Pair10 {
             ar[i]=scan.nextInt();
             
         }
-        for (int i = 0; i < ar.length-n; i++) {
+       
+        for (int i = 0; i<=ar.length-n; i++) {
+             int sum=0;
             for (int j = i; j < i+n; j++) {
-                System.out.print(ar[j]+" ");
+                sum=sum+ar[j];
                 
             }
-            System.out.println();
+            System.out.println(sum);
+           
         }
     }
     
