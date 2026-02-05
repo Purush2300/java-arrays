@@ -7,18 +7,30 @@ public class Zero1 {
         for (int i = 0; i < a.length; i++) {
             a[i]=scan.nextInt();
         }
+        int sum=1 ,max=0;
         for (int i = 0; i < a.length-1; i++) {
             if(a[i+1]-a[i]==1){
-                System.out.print(a[i]+" ");
+                sum++;
+               
+                
             }
+            
             else{
-                System.err.print(a[i]);
-                System.out.println();
+                if(sum>max){
+                    max=sum;
+                }
+                
+                sum=1;
 
             }
             
         }
-        System.out.println(a[a.length-1]);
+        if(sum>max){
+                    max=sum;
+                }
+                
+    System.out.println(max);
+       
     }
     
 }
