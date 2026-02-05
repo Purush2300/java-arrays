@@ -11,16 +11,29 @@ public class Pair10 {
             ar[i]=scan.nextInt();
             
         }
-       
+       int count=0;
         for (int i = 0; i<=ar.length-n; i++) {
              int sum=0;
             for (int j = i; j < i+n; j++) {
                 sum=sum+ar[j];
                 
+                
             }
-            System.out.println(sum);
+            
+            if(sum==7){
+                 for (int j = i; j < i+n; j++) {
+               System.out.print(ar[j]+" ");
+                
+                
+            }
+              System.out.println();  
+                   
+                }
+            
            
         }
+        
+       
     }
     
 }
